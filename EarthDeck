@@ -1,0 +1,88 @@
+import java.awt.Image;
+import java.awt.Insets;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+
+
+public class EarthDeck {
+	
+	protected static JButton earthquakeButton = new JButton();
+	protected static JButton reflectionButton = new JButton();
+	protected static JButton reflection2Button = new JButton();
+	protected static JButton untouchableButton = new JButton();
+	protected static JButton atmosphereButton = new JButton();
+	protected static JButton greatAbsorbationButton = new JButton();
+	protected static JButton earthHoleButton = new JButton();
+	protected static JButton formOfModButton = new JButton();
+	
+	
+	public static void getImagesOfEarthDeck () throws IOException{
+		Image earthquakeImage = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-1//earthquake.jpg"));
+		Image reflectionImage = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-1//reflection.jpg"));
+		Image reflection2Image = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-2//reflection.jpg"));
+		Image untouchableImage = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-2//untouchable.jpg"));
+		Image atmosphereImage = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-3//atmosphere.jpg"));
+		Image greatAbsorbationImage = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-3//greatAbsorbation.jpg"));
+		Image earthHoleImage = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-4//earthHole.jpg"));
+		Image formOfModImage = ImageIO.read(new File("C://Users//student//Desktop//files//eclipse//workspace//TheLastHand//images//spellcards//earthDeck//level-5//formOfMod.jpg"));
+
+		
+		CardChoosingFrame.cardChoosingFrame.add(earthquakeButton);
+		CardChoosingFrame.cardChoosingFrame.add(reflectionButton);
+		CardChoosingFrame.cardChoosingFrame.add(reflection2Button);
+		CardChoosingFrame.cardChoosingFrame.add(untouchableButton);
+		CardChoosingFrame.cardChoosingFrame.add(atmosphereButton);
+		CardChoosingFrame.cardChoosingFrame.add(greatAbsorbationButton);
+		CardChoosingFrame.cardChoosingFrame.add(earthHoleButton);
+		CardChoosingFrame.cardChoosingFrame.add(formOfModButton);
+		
+		
+		
+
+		earthquakeButton.setIcon(new ImageIcon(earthquakeImage));
+		earthquakeButton.setIcon(new ImageIcon(earthquakeImage));
+		earthquakeButton.setMargin(new Insets(0,0,0,0));
+		earthquakeButton.setBorder(null);
+		
+		reflectionButton.setIcon(new ImageIcon(reflectionImage));
+		reflectionButton.setIcon(new ImageIcon(reflectionImage));
+		reflectionButton.setMargin(new Insets(0,0,0,0));
+		reflectionButton.setBorder(null);
+
+		reflection2Button.setIcon(new ImageIcon(reflection2Image));
+		reflection2Button.setIcon(new ImageIcon(reflection2Image));
+		reflection2Button.setMargin(new Insets(0,0,0,0));
+		reflection2Button.setBorder(null);
+	
+		untouchableButton.setIcon(new ImageIcon(untouchableImage));
+		untouchableButton.setIcon(new ImageIcon(untouchableImage));
+		untouchableButton.setMargin(new Insets(0,0,0,0));
+		untouchableButton.setBorder(null);
+
+		atmosphereButton.setIcon(new ImageIcon(atmosphereImage));
+		atmosphereButton.setIcon(new ImageIcon(atmosphereImage));
+		atmosphereButton.setMargin(new Insets(0,0,0,0));
+		atmosphereButton.setBorder(null);
+
+		greatAbsorbationButton.setIcon(new ImageIcon(greatAbsorbationImage));
+		greatAbsorbationButton.setIcon(new ImageIcon(greatAbsorbationImage));
+		greatAbsorbationButton.setMargin(new Insets(0,0,0,0));
+		greatAbsorbationButton.setBorder(null);
+		
+		earthHoleButton.setIcon(new ImageIcon(earthHoleImage));
+		earthHoleButton.setIcon(new ImageIcon(earthHoleImage));
+		earthHoleButton.setMargin(new Insets(0,0,0,0));
+		earthHoleButton.setBorder(null);
+		
+		formOfModButton.setIcon(new ImageIcon(formOfModImage));
+		formOfModButton.setIcon(new ImageIcon(formOfModImage));
+		formOfModButton.setMargin(new Insets(0,0,0,0));
+		formOfModButton.setBorder(null);
+		
+	}
+
+}
